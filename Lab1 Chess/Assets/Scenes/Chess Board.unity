@@ -833,6 +833,10 @@ PrefabInstance:
       propertyPath: tint.r
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 1372076160323093370, guid: 6b3afec1e1e1ad945961c3131834e76a, type: 3}
+      propertyPath: pieceType
+      value: 4
+      objectReference: {fileID: 0}
     - target: {fileID: 1451856574287591079, guid: 6b3afec1e1e1ad945961c3131834e76a, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0.5
@@ -1145,6 +1149,22 @@ PrefabInstance:
     - target: {fileID: 1372076160323093370, guid: 6b3afec1e1e1ad945961c3131834e76a, type: 3}
       propertyPath: tint.r
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1372076160323093370, guid: 6b3afec1e1e1ad945961c3131834e76a, type: 3}
+      propertyPath: pieceType
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1372076160323093370, guid: 6b3afec1e1e1ad945961c3131834e76a, type: 3}
+      propertyPath: pieceIcons.Array.data[3]
+      value: Chess_blt60
+      objectReference: {fileID: 0}
+    - target: {fileID: 1372076160323093370, guid: 6b3afec1e1e1ad945961c3131834e76a, type: 3}
+      propertyPath: pieceIcons.Array.data[4]
+      value: Chess_qlt60
+      objectReference: {fileID: 0}
+    - target: {fileID: 1372076160323093370, guid: 6b3afec1e1e1ad945961c3131834e76a, type: 3}
+      propertyPath: pieceIcons.Array.data[5]
+      value: Chess_klt60
       objectReference: {fileID: 0}
     - target: {fileID: 1451856574287591079, guid: 6b3afec1e1e1ad945961c3131834e76a, type: 3}
       propertyPath: m_LocalPosition.x
