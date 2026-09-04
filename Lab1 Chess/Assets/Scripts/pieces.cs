@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEditor.UIElements;
+using UnityEditor;
 
 public class pieces : MonoBehaviour
 {
@@ -38,6 +39,27 @@ public class pieces : MonoBehaviour
     {
         Gizmos.DrawIcon(transform.position, pieceIcons[(int)pieceType], true, tint);
     }
+
+
+// Customize the outline color in the inspector
+
+    public Color outlineColor = Color.yellow;
+
+// Used to run handles in the editor window
+#if UNITY_EDITOR
+
+    private void OnDrawGizmosSelected()
+    {
+
+        Handles.color = outlineColor;
+        // Specific float values because the "board" covers the outline
+        Handles.DrawWireCube(transform.position, new Vector3(.9f, .9f, 0f));
+
+    }
+
+#endif
+
+
     
     /*
     void OnDrawGizmos()

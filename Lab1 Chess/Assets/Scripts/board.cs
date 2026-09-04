@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEditor;
 
 public class board : MonoBehaviour
 {
@@ -17,5 +18,6 @@ public class board : MonoBehaviour
         {
             Gizmos.DrawLine(new Vector3(0, j, 0), new Vector3(8f, j, 0));   // Draw horizontal lines
         }
+            
     }
 }
