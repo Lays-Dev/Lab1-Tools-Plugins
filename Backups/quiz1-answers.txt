@@ -1,0 +1,78 @@
+// Code to draw shapes with gizmos. Unity.
+// Two versions
+
+
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+using UnityEditor;
+
+
+public class shape: MonoBehaviour
+{
+    private void OnDrawGizmos()
+    {
+// Color so you can see the shape
+        Gizmos.color = Color.white;
+
+
+ // Array for each vertex on the shape
+        Vector3[] vertex =
+        {
+            new Vector3(0, 0, 0),
+            new Vector3(0, 3f, 0),
+            new Vector3(0, 3f, 0),
+            new Vector3(2f, 5f, 0),
+            new Vector3(2f, 5f, 0),
+            new Vector3(4f, 3f, 0),
+            new Vector3(4f, 3f, 0),
+            new Vector3(4f, 0, 0),
+            new Vector3(4f, 0, 0),
+            new Vector3(0, 0, 0)
+        };
+
+
+        // Create the shape from the array
+        Gizmos.DrawLineList(vertex);           
+    }
+}
+
+
+
+
+/////////////////////////////////////////////////////////////////////////////////////
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+using UnityEditor;
+
+
+public class shape: MonoBehaviour
+{
+    private void OnDrawGizmos()
+    {
+        Gizmos.color = Color.white;
+
+
+        // Array for each vertex on the shape
+
+
+        Vector3[] vertex =
+        {
+            new Vector3(0, 0, 0),
+            new Vector3(0, 3f, 0),
+            new Vector3(2f, 5f, 0),
+            new Vector3(4f, 3f, 0),
+            new Vector3(4f, 0, 0)
+        };
+
+
+        // Create the shape from the array
+
+
+        for (int i = 0; i < vertex.Length; i++)
+        {
+            Gizmos.DrawLine(vertex[i], vertex[(i + 1) % vertex.Length]);
+        }  
+    }
+}
